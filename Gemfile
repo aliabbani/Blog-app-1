@@ -73,3 +73,11 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+group :development, :test do
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails', '>= 5.0.2'
+end
+
+gem 'ffi', github: 'ffi/ffi', submodules: true
+gem 'rails-controller-testing'
